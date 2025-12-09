@@ -7,14 +7,14 @@ import { useDebouncedCallback } from 'use-debounce';
 import toast, { Toaster } from 'react-hot-toast';
 import css from './NotesPage.module.css';
 
-import NoteList from '../NoteList/NoteList';
-import { fetchNotes } from '../../services/noteService';
-import ErrorMessage from '../ErrorMessage//ErrorMessage';
-import Loader from '../Loader/Loader';
-import Pagination from '../Pagination/Pagination';
-import Modal from '../Modal/Modal';
-import NoteForm from '../NoteForm/NoteForm';
-import SearchBox from '../SearchBox/SearchBox';
+import NoteList from '@/components/NoteList/NoteList';
+import { fetchNotes } from '@/lib/api';
+import ErrorMessage from '@/components/ErrorMessage/ErrorMessage';
+import Loader from '@/components/Loader/Loader';
+import Pagination from '@/components/Pagination/Pagination';
+import Modal from '@/components/Modal/Modal';
+import NoteForm from '@/components/NoteForm/NoteForm';
+import SearchBox from '@/components/SearchBox/SearchBox';
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
